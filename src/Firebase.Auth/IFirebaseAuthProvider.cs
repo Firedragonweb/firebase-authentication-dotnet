@@ -134,5 +134,7 @@
         /// </summary>
         /// <param name="token"> Recent Firebase Token. </param>
         Task DeleteUser(string firebaseToken);
+
+        Task<FirebaseAuthLink> SignInWithOAuthTwitterAsync(FirebaseAuthType authType, string oauthAccessToken, string oauthVerifier, string secret);
     }
 }
